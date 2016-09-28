@@ -1,0 +1,97 @@
+/* Layout */
+
+.topLevelContainer {
+	margin-left: auto;
+	margin-right: auto; 
+	width: 850px;
+}
+
+.leftCol {
+	float: left;
+	width: 350px;
+}
+
+#topContainer .rightCol {
+	margin-left: 350px;
+}
+
+#resultsContainer .rightCol {
+	margin-left: 450px;
+}
+
+#instructionsContainer {
+	margin-top: 15px;
+	border-top: 1px solid;
+}
+
+/* Headers */
+
+#topContainer h4 {
+	margin-bottom: 0px;
+}
+
+#diagrams h3 {
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#instructionsContainer h2 {
+	margin-top: 20px;
+}
+
+/* Other Text */
+
+#topContainer p {
+	margin-top: 2px;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+#instructionsContainer p {
+	font-size: 12px;
+}
+
+#inputs span.leftSide {
+	float: left;
+	width: 140px;
+}
+
+span#gapDegrees {
+	font-size: 12px;
+	margin-left: 4px;
+}
+
+.gapColor {
+	color: red;
+}
+
+.gapCalcsLeft {
+	float: left;
+	width: 80px;
+}
+
+.alignColor {
+	color: #009444;
+}
+
+.alignCalcsLeft {
+	float: left;
+	width: 40px;
+}
+
+/* Flange Canvas */
+
+#flange {
+	height: 300px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#flangeCanvas {
+	position: relative;
+	cursor: pointer;
+	top: -300px;
+}

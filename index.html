@@ -1,0 +1,63 @@
+<!CTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<script language="javascript" type="text/javascript" src="jquery/jquery-1.5.2.js"></script>
+	<script language="javascript" type="text/javascript" src="alignment.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="alignment.css" />
+  </head>
+  <body style="font-family: arial,helvetica;">
+	<div id="topContainer" class="topLevelContainer" style="height: 580px;">
+		<h1 style="text-align: center; margin-bottom: 0px; padding-bottom: 10px; border-bottom: 1px solid;">Direct Drive Engine Alignment Calculator</h1>
+		<div class="leftCol">
+			<div id="inputs">
+				<h3>Input Parameters</h3>
+				<span class="leftSide">D</span> = <input id="dInput" type="text" size="5" value="4" title="flange diameter ( inches )"/> &quot;<br>
+				<span class="leftSide">R1</span> = <input id="r1Input" type="text" size="5" value="10" title="distance from flange surface to rear engine mounts ( inches )"/> &quot;<br>
+				<span class="leftSide">R2</span> = <input id="r2Input" type="text" size="5" value="20" title="distance from flange surface to front engine mounts ( inches )"/> &quot;<br>
+				<span class="leftSide gapColor">Max Flange Gap</span> = <input id="gapValInput" class="gapColor" type="text" size="5" value="0.003" title="maximum gap between flange surfaces ( inches )"/> &quot;<br>
+				<span class="leftSide gapColor">Gap Position</span> = <span id="gapDegrees" class="gapColor" title="position of maximum flange gap, drag and drop red arrow below"></span><br>
+			</div>
+				
+				<h4>Flange from behind looking toward bow</h4>
+				<p>(drag and drop arrow to set gap position)</p>
+			<div id="flange">
+				<img src="img/flange_300.png"/>
+				<canvas id="flangeCanvas" width="300" height="300">HTML 5 Canvas is not supported on your browser.</canvas>
+			</div>
+		</div>
+		<div class="rightCol">
+			<div id="diagrams">
+				<h3>Top View</h3>
+				<img src="img/topview.png"/>
+				<h3>Side View</h3>
+				<img src="img/sideview.png"/>
+			</div>
+		</div>
+	</div>
+	
+	<div id="resultsContainer" class="topLevelContainer">
+		<div class="leftCol">
+			<h3 style="margin-top: 0px;">Flange Quadrant Gap Calculations</h3>
+			<span class="gapCalcsLeft">0&deg; gap</span> = <span id="gap0result">0.000</span> &quot;<br>
+			<span class="gapCalcsLeft">90&deg; gap</span> = <span id="gap90result">0.000</span> &quot;<br>
+			<span class="gapCalcsLeft">180&deg; gap</span> = <span id="gap180result">0.000</span> &quot;<br>
+			<span class="gapCalcsLeft">270&deg; gap</span> = <span id="gap270result">0.000</span> &quot;<br>
+		</div>
+		<div class="rightCol">
+			<h3>Alignment Calculations</h3>
+			<span class="alignCalcsLeft alignColor">H1</span> = <span id="h1result" class="alignColor">0.000</span> &quot;<br>
+			<span class="alignCalcsLeft alignColor">H2</span> = <span id="h2result" class="alignColor">0.000</span> &quot;<br>
+			<span class="alignCalcsLeft alignColor">V1</span> = <span id="v1result" class="alignColor">0.000</span> &quot;<br>
+			<span class="alignCalcsLeft alignColor">V2</span> = <span id="v2result" class="alignColor">0.000</span> &quot;<br>
+		</div>
+	</div>
+	
+	<div id="instructionsContainer" class="topLevelContainer">
+        <!--
+		<h2>Instructions</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+	</div>
+  </body>
+</html>
